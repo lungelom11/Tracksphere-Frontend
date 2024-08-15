@@ -1,0 +1,31 @@
+.main-layout-container{
+    display: flex;
+    gap: 1rem;
+    margin-top: 70px;
+}
+
+.main-content-container{
+    margin-left: 200px;
+    min-height: calc(100vh - 70px);
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar-container {
+    min-height: calc(100vh - 75px);
+    position: fixed;
+    border-radius: 20px;
+    max-width: 200px; /* Default width */
+    box-shadow: 1px 1px 1px 1px #1374f4;
+    transition: width 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    z-index: 1000;
+}
+
+.sidebar-container.collapsed {
+    max-width: 100px; /* Collapsed width */
+    box-shadow: 0; /* Adjust shadow for collapsed state */
+}

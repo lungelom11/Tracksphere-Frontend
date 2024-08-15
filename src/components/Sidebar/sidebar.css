@@ -1,0 +1,115 @@
+.responsive-icon {
+    font-size: 1.7rem;
+    position: absolute;
+    right: -17px; 
+    top: 3%; 
+    color: #1374f4;
+    border: 1px solid #1374f4;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease, border 0.3s ease; /* Smooth transition */
+}
+
+.sidebar {
+    width: 200px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+  }
+
+  .sidebar ul li{
+    list-style-type: none;
+  }
+
+  .sidebar ul li a {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    padding: 10px 10px;
+    text-decoration: none;
+    margin: 0.8rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    position: relative;
+    transition: all 0.1s ease;
+    border-radius: 3px;
+    color: #1374f4;
+  }
+  
+  .sidebar ul li a:hover {
+    background: #1374f4;
+    color: white;
+  }
+
+  .sidebar ul li a .icon {
+    font-size: 1.3rem;
+    width: 40px;
+    display: inline-block;
+  }
+  
+  .sidebar ul li a .item {
+    width: 170px;
+    display: inline-block;
+    vertical-align: text-bottom;
+    transition: all 0.5s 0.1s ease;
+  }
+
+  
+  
+  aside.active .sidebar {
+    width: 100px;
+    padding: 10px;
+  }
+  
+  aside.active .main-content {
+    margin-left: 100px; /* Adjust this value as needed */
+  }
+  
+  aside.active .sidebar .profile .pro_info {
+    margin-right: 0px;
+  }
+  
+  aside.active .sidebar ul li a {
+    width: 50px;
+    padding: 10;
+  }
+  
+  aside.active .sidebar ul li a .icon {
+    text-align: center;
+  }
+  
+  aside.active .sidebar ul li a .item {
+    width: 0;
+  }
+  
+  aside.active .sidebar ul li a .item,
+  aside.active .sidebar .profile .pro_info {
+    display: none;
+    transition: all 0.1s ease;
+  }
+  
+  aside.active .sidebar ul li a .count {
+    top: 2px;
+    right: 2px;
+    padding: 0px 5px;
+    font-size: 8px;
+  }
+  
+  ul {
+    padding-left: 0px;
+  }
+  
+  .active-page {
+    background-color: #1374f4;
+  }
+  
+  .active-page .item,
+  .active-page .icon {
+    color: whitesmoke;
+  }
